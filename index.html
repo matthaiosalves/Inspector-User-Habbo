@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Inspector User Habbo</title>
+</head>
+
+<body>
+
+  <main>
+    <audio id="dobrado" src="dobrado.mp3" autoplay loop>
+      Dont have support for audio tag
+    </audio>
+
+    <div class="alertaa">
+      <div class="alerta">
+        <picture>
+          <img lazy="loading" src="noti.png" alt="Alt Text!">
+        </picture>
+        <h3>Cuidado!</h3>
+        <p>Todos os dados são confidenciais. <br> Não compartilhe com terceiros.</p>
+        <div class="btn-group">
+          <button class="btn btn-danger" type="button" data-tipo="1" onclick="play();">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="search--user">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <input class="form-control" type="text" placeholder="Insira o nick..." aria-label="default input example" id="data" value="Paterneck">
+
+            <button type="submit" id="search" class="btn btn-danger button-search w-100 mt-2">Buscar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="resultado">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="d-flex justify-content-center align-items-center text-white mt-5">
+      <p>Desenvolvidor por <a class="text-white" href="//github.com/matthaiosalves">Matheus Alves</a></p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+  <script src="modal.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+    });
+  </script>
+</body>
+
+</html>

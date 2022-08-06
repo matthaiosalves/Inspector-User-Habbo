@@ -1,0 +1,134 @@
+/*
+Desenvolvido por Matheus Alves
+Github: https://github.com/matthaiosalves
+*/
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 30, 0, 0.651);    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
+
+
+ body {
+  background: linear-gradient(127deg, rgba(75,75,75,1) 0%, rgba(15,12,12,1) 50%, rgba(56,52,52,1) 100%);
+	background: linear-gradient(-45deg, rgb(184, 166, 64) 0%, rgba(15,12,12,1) 50%, rgb(179, 19, 19) 100%, rgb(151, 1, 1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  overflow-x: hidden;
+ }
+
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.search--user {
+  margin-top: 50px;
+}
+.spinner-grow {
+  background-image: url('https://www.habbo.com.br/habbo-imaging/badge/b10134s36014s12017s19114s481016262940df372eaaa836b6bd525c6a6f2.gif');
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffff0066;
+}
+
+.results .results--image-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: black;
+  border: 3px solid yellow;
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 30%), 0 1px 3px -1px rgb(45 60 72 / 50%);
+}
+.results .button-see-profile a,
+.search--user .button-search {
+  background-color: #ae1212;
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 30%), 0 1px 3px -1px rgb(45 60 72 / 50%);
+  filter: drop-shadow(0px 5px 20px #ae1212);
+  -webkit-filter: drop-shadow(0px 5px 20px #ae1212);
+}
+
+.table {
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 30%), 0 1px 3px -1px rgb(45 60 72 / 50%);
+}
+.alertaa .alerta .btn-group {
+  display: flex;
+
+  width: 254px;
+  max-width: 100%;
+}
+.alertaa .alerta .btn-group button {
+	z-index: 1;
+  background-color: #ae1212;
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 30%), 0 1px 3px -1px rgb(45 60 72 / 50%);
+  filter: drop-shadow(0px 5px 20px #ae1212);
+  -webkit-filter: drop-shadow(0px 5px 20px #ae1212);
+}
+.alerta {
+	background: #000;
+  z-index: 9999;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
+  min-height: 175px;
+  border-radius: 3px;
+  filter: drop-shadow(0px 5px 20px #ae1212);
+  -webkit-filter: drop-shadow(0px 5px 20px #ae1212);
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 30%), 0 1px 3px -1px rgb(45 60 72 / 50%);
+  text-shadow: 0 2px #000;
+}
+
+.alertaa {
+	position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alertaa .alerta picture img {
+  filter: drop-shadow(0px 5px 20px #ae1212);
+  -webkit-filter: drop-shadow(0px 5px 20px #ae1212);
+}
+.alertaa .alerta p,
+.alertaa .alerta h3 {
+  text-align: center;
+}
